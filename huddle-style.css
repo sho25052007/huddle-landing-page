@@ -1,0 +1,232 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* -------------HUDDLE STYLES------------------ */
+
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+body {
+    background: url("images/bg-mobile.svg") top center / contain no-repeat fixed rgb(103, 75, 175);
+	display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    min-height: 100vh;
+    font-size: 15px;
+}
+
+main {
+	width: 80%;
+	min-width: 200px;
+	margin: 0 auto;
+	margin: 2.5em 0;
+}
+
+
+/* MOCKUP IMAGE AND HUDDLE LOGO */
+
+.mockup-img {
+	width: 100%;
+	margin-bottom: 4em;
+}
+
+.logo {
+	width: 40%;
+	float: left;
+	margin-bottom: 4em;
+}
+
+
+/* TEXT SECTION */
+h1.heading-description {
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	line-height: 1.5em;
+	font-weight: 600;
+	font-size: 1.5em;
+	color: white;
+}
+
+p.ad-description {
+	margin: 1em 0;
+	text-align: center;
+	font-size: 1em;
+	line-height: 1.5em;
+	color: white;
+	padding: 0.4em;
+}
+
+
+/* REGISTER BUTTON */
+button {
+	border-radius: 20px;
+	color: rgb(103, 75, 175);
+	background-color: white;
+	border-style: none;
+	box-shadow: 0 3px 0.3em 0.1em rgb(85, 62, 150);
+	width: 60%;
+	padding: 10px 25px;
+	display: block;
+	margin: 1.5em auto 5em;
+	cursor: pointer;
+}
+
+
+/* SOCIAL MEDIA BUTTON */
+.social-media {
+	text-align: center;
+}
+
+.fa-stack {
+	color: white;
+	padding: 0.2em;
+	cursor: pointer;
+}
+
+
+/* MEDIA QUERIES */
+@media (min-width:800px) and (max-width:1300px){
+	body {
+		background: url("images/bg-mobile.svg") center center / cover no-repeat fixed rgb(103, 75, 175);
+	}
+}
+
+@media (min-width:1300px){
+	body {
+		background: url("images/bg-desktop.svg") left center / contain no-repeat fixed rgb(103, 75, 175);
+	}
+
+	main {
+		width: 90%;
+		margin: 4em 0;
+	}
+
+	.content {
+		display: flex;
+		flex-direction: row;
+	}
+
+	/* LOGO AND IMAGE */
+	.logo-section {
+		display: flex;
+		flex: 1;
+	}
+
+	.logo {
+		width: 15%;
+	}
+
+	.mockup-img {
+		width: 50%;
+		padding: 1em;
+	}
+
+	/* DESCRIPTION CONTENT */
+	.description-content {
+		padding: 3.5em 2.5em 0;
+	}
+
+	h1.heading-description {
+		text-align: left;
+		font-size: 2.5em;
+		line-height: 1.5em;
+	}
+
+	p.ad-description {
+		text-align: left;
+		font-size: 1.2em;
+		margin: 0.5em 0;
+	}
+
+	button {
+		margin: 1em auto 5em 0;
+		width: 30%;
+		font-size: 1.2em;
+		transition: color 0.5s, box-shadow 0.2s, background-color 0.5s;
+	}
+
+	button:hover, button:focus {
+		color: white;
+		background-color: rgb(232, 130, 232);
+		box-shadow: 0 0 1em 0.2em rgb(69, 50, 122);
+	}
+
+
+	/* SOCIAL MEDIA BUTTON */
+	.social-media {
+		text-align: right;
+	}
+
+	.fa-stack {
+		transition: color 0.5s;
+	}
+
+	.fa-stack:hover, .fa-stack:focus {
+		color: rgb(232, 130, 232);
+	}
+	}
+
+
+/* FOOTER */
+footer {
+    display: none;
+
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+}
+
+.attribution a {
+    color: rgb(62, 82, 163);
+}
